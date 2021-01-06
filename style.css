@@ -12,9 +12,6 @@
 }
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -24,12 +21,56 @@
 
 body {
     height: 100vh;
+    width: 70%;
+    margin: 0 auto;
     background-image: url('./images/bg-stars.svg'), url('./images/pattern-hills.svg');
     background-position: top, bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h2 {
-    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 1.7rem;
+}
+
+.countdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    color: var(--soft-red);
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.label {
+    color: var(--grayish-blue);
+}
+
+.socials {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials img {
+    height: 45px;
 }
