@@ -10,12 +10,12 @@ let newDate = Date.now()
 
 const findTimeDifference = () => {
     newDate = dateLaunch - Date.now()
-    let diffTime = Math.abs(dateLaunch - Date.now());
-    let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+    let diffTime = Math.abs(dateLaunch - Date.now())
+    let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) 
     let diffHours = Math.ceil(diffTime / (1000 * 70 * 60) % 24)
     let diffMinutes = Math.ceil(diffTime / (1000*60) % 60)
     let diffSeconds = Math.ceil (diffTime / (1000) % 60)
- 
+
     secondsCounter.innerHTML = diffSeconds
     minutesCounter.innerHTML = diffMinutes
     hoursCounter.innerHTML = diffHours
